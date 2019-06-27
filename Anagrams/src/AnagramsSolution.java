@@ -1,5 +1,5 @@
 
-//Two strings,  and , are called anagrams if they contain all the same characters in the same frequencies
+//Two strings are called anagrams if they contain all the same characters in the same frequencies
 
 import java.util.Scanner;
 import java.util.Map;
