@@ -9,18 +9,9 @@ public enum Region {
 
     private int currentNumber = 1000;
     private String prefix;
-
-    private Region(String prefix) {
-        this.prefix = prefix;
-    }
-
+    
     public String getPrefix() {
         return this.prefix;
-    }
-
-    private char getRandomChar() {
-        Random randomChar = new Random();
-        return (char) (randomChar.nextInt(NUMBER_OF_LETTERS) + 'A');
     }
 
     public String carRegistartionNumber() {
@@ -28,4 +19,12 @@ public enum Region {
         current++;
         return String.format("%s%d%c%c", this.prefix, current, this.getRandomChar(), this.getRandomChar());
     }
+    private char getRandomChar() {
+        Random randomChar = new Random();
+        return (char) (randomChar.nextInt(NUMBER_OF_LETTERS) + 'A');
+    }
+    private Region(String prefix) {
+        this.prefix = prefix;
+    }
+
 }
